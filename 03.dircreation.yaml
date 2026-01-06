@@ -4,5 +4,5 @@
   tasks:
    - name: dir
      file:
-     path: /tmp/ansible
+     path: /tmp/
      state: directory
