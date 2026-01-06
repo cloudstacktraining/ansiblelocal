@@ -1,0 +1,8 @@
+- name: my first ansible
+  hosts: local
+  gather_facts: yes
+  
+  tasks:
+   - name: print the message
+     debug: 
+      msg: "hello world"
