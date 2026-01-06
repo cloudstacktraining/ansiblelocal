@@ -1,0 +1,8 @@
+- name: directory 
+  hosts: local
+  gather_facts: no
+  tasks:
+   - name: dir
+     file:
+      path: /tmp/
+      state: directory
