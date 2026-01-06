@@ -3,6 +3,6 @@
   gather_facts: no
   tasks:
    - name: dir
-     path:
-     file: /tmp/ansible
+     file:
+     path: /tmp/ansible
      state: directory
