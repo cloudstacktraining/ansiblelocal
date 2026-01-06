@@ -1,0 +1,8 @@
+- name: local
+  hosts: local
+  gather_facts: no
+  tasks:
+   - name: create file in /tmp
+     file:
+      path: /tmp/day2_ansible.txt
+      state: touch
