@@ -1,0 +1,8 @@
+- name: directory 
+  hosts: local
+  gather_facts: no
+  tasks:
+   - name: dir 
+     path:
+     file: /tmp/ansible
+     state: mkdir
