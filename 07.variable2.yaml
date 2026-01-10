@@ -1,0 +1,7 @@
+- name: show uptime
+  command: uptime
+  register: up
+
+- name: print uptime
+  debug: 
+   var: up.stdout
