@@ -1,5 +1,5 @@
 - name: uptime play
-  tasks: local
+  hosts: local
   gather_facts: no
 
   tasks:
