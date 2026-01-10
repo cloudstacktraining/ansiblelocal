@@ -1,0 +1,12 @@
+- name: register
+  hosts: local
+  gather_facts: no
+
+  tasks:
+   - name: get hostname
+     command: hostname
+     register: host_output
+
+   - name: hostname
+     debug:
+      msg: "this is srujan {{ host_output.std.out }}"
