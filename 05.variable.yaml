@@ -13,4 +13,4 @@
        state: touch
     - name: print message using variable
       debug:
-       msg: "{{ my_meassge }}"
+       msg: "{{ my_message }}"
