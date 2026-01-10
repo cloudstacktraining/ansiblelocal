@@ -1,0 +1,16 @@
+- name: variable
+  hosts: local
+  gather_facts: no
+
+  vars:
+   my_file: /tmp/file.txt
+   my_message: "hello"
+
+   tasks:
+    - name: creat the line
+      file:
+       path: "{{ my_file }}"
+       state: touch
+    - name: print message using variable
+      debug:
+       msg: "{{ my_meassge }}"
