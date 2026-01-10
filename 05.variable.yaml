@@ -6,11 +6,11 @@
    my_file: /tmp/file.txt
    my_message: "hello"
 
-   tasks:
-    - name: creat the line
-      file:
+  tasks:
+  - name: creat the line
+    file:
        path: "{{ my_file }}"
        state: touch
-    - name: print message using variable
-      debug:
-       msg: "{{ my_message }}"
+  - name: print message using variable
+    debug:
+      msg: "{{ my_message }}"
