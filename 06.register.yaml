@@ -9,4 +9,4 @@
 
    - name: print hostname
      debug:
-       msg: "this is srujan {{ host_output.std.out }}"
+       msg: "this is srujan {{ host_output.stdout }}"
