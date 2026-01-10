@@ -1,7 +1,12 @@
-- name: show uptime
-  command: uptime
-  register: up
+- name: uptime play
+  tasks: local
+  gather_facts: no
 
-- name: print uptime
-  debug: 
-   var: up.stdout
+  tasks:
+   - name: show uptime
+     command: uptime
+     register: up
+
+   - name: print uptime
+     debug: 
+      var: up.stdout
